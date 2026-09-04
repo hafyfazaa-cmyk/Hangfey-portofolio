@@ -73,7 +73,7 @@ const CERTIFICATES = [
     title: "The Most Ikhlas Student",
     provider: "SMK Skill Village Islamic School",
     badge: null,
-    image: "/certificates/penghargaan-ikhlas-student.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/penghargaan-ikhlas-student.jpg`,
     hasDetail: false,
   },
   {
@@ -82,7 +82,7 @@ const CERTIFICATES = [
     title: "UI/UX Designer Tingkat Pemula",
     provider: "Skillage Academy x SMK Skill Village",
     badge: "Sangat Kompeten",
-    image: "/certificates/uiux-designer-pemula-front.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/uiux-designer-pemula-front.jpg`,
     hasDetail: true,
     hardSkills: UIUX_HARD_SKILLS,
     hardSkillScore: 91,
@@ -97,7 +97,7 @@ const CERTIFICATES = [
     title: "Front End Developers Tingkat Dasar",
     provider: "Skillage Academy x SMK Skill Village",
     badge: "Kompeten",
-    image: "/certificates/frontend-developers-dasar-front.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/frontend-developers-dasar-front.jpg`,
     hasDetail: true,
     hardSkills: FRONTEND_HARD_SKILLS,
     hardSkillScore: 86,
@@ -112,7 +112,7 @@ const CERTIFICATES = [
     title: "UI/UX Desainer Tingkat Dasar",
     provider: "Skillage Academy x SMK Skill Village",
     badge: "Kompeten",
-    image: "/certificates/uiux-desainer-dasar-v2-front.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/uiux-desainer-dasar-v2-front.jpg`,
     hasDetail: true,
     hardSkills: UIUX_V2_HARD_SKILLS,
     hardSkillScore: 88,
@@ -127,7 +127,7 @@ const CERTIFICATES = [
     title: "Surat Referensi Kompetensi Kerja",
     provider: "PT. Phoenix Cendekia Indonesia",
     badge: "Junior Back End Developer",
-    image: "/certificates/surat-referensi-kompetensi-kerja.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/surat-referensi-kompetensi-kerja.jpg`,
     hasDetail: false,
   },
   {
@@ -136,7 +136,7 @@ const CERTIFICATES = [
     title: "Graphic Design Essentials",
     provider: "Canva Design School",
     badge: "Certified",
-    image: "/certificates/canva-graphic-design-essentials.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/canva-graphic-design-essentials.jpg`,
     hasDetail: false,
   },
   {
@@ -145,7 +145,7 @@ const CERTIFICATES = [
     title: "Canva Essentials",
     provider: "Canva Design School",
     badge: "Certified",
-    image: "/certificates/canva-essentials.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/canva-essentials.jpg`,
     hasDetail: false,
   },
   {
@@ -154,7 +154,7 @@ const CERTIFICATES = [
     title: "Meet Canva's Visual Suite",
     provider: "Canva Design School",
     badge: "Certified",
-    image: "/certificates/canva-visual-suite.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/canva-visual-suite.jpg`,
     hasDetail: false,
   },
   {
@@ -163,7 +163,7 @@ const CERTIFICATES = [
     title: "Buat Konten Memikat",
     provider: "Canva Design School",
     badge: "Certified",
-    image: "/certificates/canva-konten-memikat.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/canva-konten-memikat.jpg`,
     hasDetail: false,
   },
   {
@@ -172,7 +172,7 @@ const CERTIFICATES = [
     title: "Pengetahuan Dasar Guru",
     provider: "Canva Design School",
     badge: "Certified",
-    image: "/certificates/canva-dasar-guru.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/canva-dasar-guru.jpg`,
     hasDetail: false,
   },
   {
@@ -181,7 +181,7 @@ const CERTIFICATES = [
     title: "Perkenalan Aplikasi Visual Canva",
     provider: "Canva Design School",
     badge: "Certified",
-    image: "/certificates/canva-perkenalan-visual.jpg",
+    image: `${import.meta.env.BASE_URL}certificates/canva-perkenalan-visual.jpg`,
     hasDetail: false,
   },
 ];

@@ -16,41 +16,29 @@ const NAV_IDS = [
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
   const { language, toggleLanguage } = useLanguage();
 
   const t = translations[language].navbar;
 
   useEffect(() => {
-    // Jarak dari atas viewport yang dianggap "garis aktif" —
-    // sedikit di bawah navbar (navbar tingginya 80px)
     const OFFSET = 120;
 
     function handleScroll() {
       setScrolled(window.scrollY > 10);
 
       let current = NAV_IDS[0];
-
       for (const id of NAV_IDS) {
         const el = document.getElementById(id);
         if (!el) continue;
-
         const top = el.getBoundingClientRect().top;
-
-        // Section dianggap aktif kalau bagian atasnya sudah
-        // melewati garis OFFSET dari atas layar
-        if (top <= OFFSET) {
-          current = id;
-        }
+        if (top <= OFFSET) current = id;
       }
 
-      // Kalau sudah scroll sampai paling bawah halaman,
-      // paksa section terakhir jadi aktif
       const scrolledToBottom =
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 5;
-      if (scrolledToBottom) {
-        current = NAV_IDS[NAV_IDS.length - 1];
-      }
+      if (scrolledToBottom) current = NAV_IDS[NAV_IDS.length - 1];
 
       setActiveSection(current);
     }
@@ -65,17 +53,32 @@ function Navbar() {
     };
   }, []);
 
+  // Tutup menu mobile otomatis begitu salah satu link diklik
+  function handleLinkClick() {
+    setMenuOpen(false);
+  }
+
   return (
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="logo">
-          <img
+         <img
   src={`${import.meta.env.BASE_URL}logo hafey transparant.png`}
   alt="Hafey Portfolio"
-/>
+/>	
         </div>
 
-        <div className="navbar-right">
+        <button
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen((v) => !v)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
           <div className="language">
             <button
               className={language === "en" ? "active" : ""}
@@ -97,6 +100,7 @@ function Navbar() {
                 key={id}
                 href={`#${id}`}
                 className={activeSection === id ? "active-link" : ""}
+                onClick={handleLinkClick}
               >
                 {t[id]}
               </a>

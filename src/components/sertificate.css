@@ -303,8 +303,37 @@
 
 /* RESPONSIVE */
 
+@media (max-width: 900px) {
+  .sertificate {
+    padding: 70px 20px;
+  }
+
+  .sertificate h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cert-filter-btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 500px) {
   .cert-card {
     width: 100%;
+  }
+
+  .cert-modal-backdrop {
+    padding: 12px;
+  }
+
+  .cert-modal-tabs button {
+    padding: 7px 12px;
+    font-size: 12.5px;
+  }
+
+  .cert-kompetensi-block table {
+    font-size: 12.5px;
   }
 }

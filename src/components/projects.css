@@ -15,6 +15,15 @@
 
 .project-row {
   margin-bottom: 70px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-row.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-row-title {
@@ -144,15 +153,29 @@
   margin-left: -10px;
 }
 
-.project-row {
-  margin-bottom: 70px;
+/* RESPONSIVE */
 
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
+@media (max-width: 900px) {
+  .projects {
+    padding: 70px 16px;
+  }
 
-.project-row.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+  .projects > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .project-row-title {
+    font-size: 21px;
+  }
+
+  .project-card {
+    flex: 0 0 260px;
+  }
+
+  .scroll-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
 }

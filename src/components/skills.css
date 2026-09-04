@@ -69,14 +69,34 @@
 
 /* RESPONSIVE */
 
-@media (max-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 900px) {
+  .skills {
+    padding: 70px 24px;
+  }
+
+  .skills h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .skill-card {
+    width: 130px;
+    padding: 18px;
+    gap: 10px;
+  }
+
+  .skill-card img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .skill-card span {
+    font-size: 13px;
   }
 }
 
-@media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 400px) {
+  .skill-card {
+    width: 105px;
   }
 }
