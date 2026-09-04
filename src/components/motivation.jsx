@@ -303,7 +303,7 @@ function Motivation() {
 
       <audio
         ref={audioRef}
-        src="/audio/motivasi-jangan-menyerah.mp3"
+        src={`${import.meta.env.BASE_URL}audio/motivasi-jangan-menyerah.mp3`}
         preload="auto"
       ></audio>
     </section>

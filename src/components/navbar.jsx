@@ -69,7 +69,10 @@ function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="logo">
-          <img src="/logo hafey transparant.png" alt="Hafey Portfolio" />
+          <img
+  src={`${import.meta.env.BASE_URL}logo hafey transparant.png`}
+  alt="Hafey Portfolio"
+/>
         </div>
 
         <div className="navbar-right">

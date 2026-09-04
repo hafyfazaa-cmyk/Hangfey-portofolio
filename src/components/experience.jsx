@@ -190,7 +190,7 @@ function Experience() {
         <div className="cv-buttons">
           <a
             className="cv-btn"
-            href="/cv/CV-Hafy-Faza-Aqila-English.pdf"
+            href={`${import.meta.env.BASE_URL}cv/CV-Hafy-Faza-Aqila-English.pdf`}
             download
           >
             <span className="cv-icon">⬇</span>
@@ -202,7 +202,7 @@ function Experience() {
 
           <a
             className="cv-btn"
-            href="/cv/CV-Hafy-Faza-Aqila-Indonesia.pdf"
+            href={`${import.meta.env.BASE_URL}cv/CV-Hafy-Faza-Aqila-Indonesia.pdf`}
             download
           >
             <span className="cv-icon">⬇</span>

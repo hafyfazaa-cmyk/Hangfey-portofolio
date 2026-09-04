@@ -12,7 +12,11 @@ function About() {
     <section className="about" id="about">
       <div ref={ref} className={`about-inner ${visible ? "is-visible" : ""}`}>
         <div className="about-image">
-          <img src="/About me.png" alt="Hafy Faza Aqila" className="img-about" />
+         <img
+  src={`${import.meta.env.BASE_URL}About me.png`}
+  alt="Hafy Faza Aqila"
+  className="img-about"
+/>
         </div>
 
         <div className="about-content">
@@ -23,7 +27,11 @@ function About() {
 
           <div className="edu-card edu-current">
             <div className="edu-top">
-              <img src="/logo skillvillage.png" alt="" className="edu-logo" />
+            <img
+  src={`${import.meta.env.BASE_URL}logo skillvillage.png`}
+  alt=""
+  className="edu-logo"
+/>
               <span className="edu-name">SMK Skill Village Islamic School</span>
               <span className="edu-detail">{t.eduCurrentMajor}</span>
               <span className="edu-detail">{t.eduCurrentGrade}</span>
@@ -33,7 +41,11 @@ function About() {
 
           <div className="edu-card edu-smp">
             <div className="edu-top">
-              <img src="/logo smp ip.png" alt="" className="edu-logo" />
+              <img
+  src={`${import.meta.env.BASE_URL}logo smp ip.png`}
+  alt=""
+  className="edu-logo"
+/>
               <span className="edu-name">SMP IPBS Tunas Bangsa</span>
               <span className="edu-detail">{t.eduSmpInterest}</span>
             </div>
@@ -42,7 +54,11 @@ function About() {
 
           <div className="edu-card edu-sd">
             <div className="edu-top">
-              <img src="/logo sd muh.png" alt="" className="edu-logo" />
+              <img
+  src={`${import.meta.env.BASE_URL}logo sd muh.png`}
+  alt=""
+  className="edu-logo"
+/>
               <span className="edu-name">SD Muhamadiyah 1 Muntilan</span>
               <span className="edu-detail">{t.eduSdInterest}</span>
             </div>

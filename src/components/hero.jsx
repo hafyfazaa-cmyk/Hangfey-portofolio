@@ -9,7 +9,10 @@ function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-photo">
-        <img src="/foto ganteng.jpg" alt="Hafy Faza Aqila" />
+        <img
+  src={`${import.meta.env.BASE_URL}foto ganteng.jpg`}
+  alt="Hafy Faza Aqila"
+/>
       </div>
 
       <h1>Hafy Faza Aqila</h1>
