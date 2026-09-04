@@ -1,0 +1,185 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+
+  padding: 100px 80px;
+}
+
+/* GAMBAR KIRI */
+
+.about-image {
+  flex: 1;
+  max-width: 530px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-about {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* KONTEN KANAN */
+
+.about-content {
+  flex: 1;
+  max-width: 620px;
+}
+
+.about-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #12c5e8;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* KARTU PENDIDIKAN */
+
+.edu-card {
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-top: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.edu-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.edu-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.edu-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+}
+
+.edu-detail {
+  font-size: 15px;
+  color: #555;
+}
+
+.edu-card {
+  border-radius: 8px;      /* dari 12px, biar lebih tegas gak terlalu bulat */
+  padding: 18px 20px;
+  margin-top: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-width: 2.5px;      /* border ditebalin */
+  border-style: solid;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+}
+
+
+.edu-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.edu-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.edu-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+}
+
+.edu-detail {
+  font-size: 15px;
+  color: #555;
+}
+
+.edu-bottom {
+  margin-top: 12px;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* WARNA TIAP KARTU */
+
+.edu-current {
+  border-color: #0a3d62;
+  background-color: white;
+}
+
+.edu-current:hover {
+  box-shadow: 0 10px 25px rgba(10, 61, 98, 0.35);
+}
+
+.edu-current .edu-bottom {
+  border-top: 1.5px solid rgba(10, 61, 98, 0.4);
+}
+
+.edu-smp {
+  border-color: #16a34a;
+  background-color: #f4c98d;
+}
+
+.edu-smp:hover {
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.4);
+}
+
+.edu-smp .edu-bottom {
+  border-top: 1.5px solid rgba(22, 163, 74, 0.5);
+}
+
+.edu-sd {
+  border-color: #2255dd;
+  background-color: #eef3ff;
+}
+
+.edu-sd:hover {
+  box-shadow: 0 10px 25px rgba(34, 85, 221, 0.4);
+}
+
+.edu-sd .edu-bottom {
+  border-top: 1.5px solid rgba(34, 85, 221, 0.5);
+}
+
+.about-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-inner.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
